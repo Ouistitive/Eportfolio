@@ -17,6 +17,30 @@ body {
     border: 1px solid white;
 }
 
-.container > p {
-    size: 20px;
+.container p {
+    font-size: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projects .titre {
+    flex: 0 0 100%;
+}
+
+.project {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.project .titre {
+    width: max-content;
+    margin: 5px auto;
+    font-size: 20px;
+    font-weight: bold;
 }
