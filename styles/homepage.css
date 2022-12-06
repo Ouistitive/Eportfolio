@@ -1,5 +1,5 @@
 body {
-    width: 90%;
+    width: 80%;
     margin: auto;
     background-color: grey;
     font-family: Arial;
@@ -21,9 +21,14 @@ body {
     font-size: 20px;
 }
 
+.color-blue {
+    color: blue;
+}
+
 #projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #projects .titre {
@@ -33,9 +38,9 @@ body {
 .project {
     border: 1px solid black;
     border-radius: 10px;
-    width: 400px;
+    width: 440px;
     background-color: white;
-    margin: 0 5px;
+    margin: 5px 0;
 }
 
 .project .titre {
