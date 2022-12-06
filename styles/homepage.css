@@ -1,0 +1,22 @@
+body {
+    width: 90%;
+    margin: auto;
+    background-color: grey;
+    font-family: Arial;
+}
+
+#main-content {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.titre {
+    font-size: 50px;
+}
+
+.container {
+    border: 1px solid white;
+}
+
+.container > p {
+    size: 20px;
+}
