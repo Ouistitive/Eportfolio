@@ -1,12 +1,13 @@
 body {
     width: 80%;
     margin: auto;
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     font-family: Arial;
+    color: white;
 }
 
 #main-content {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(39, 39, 39);
 }
 
 .titre {
@@ -21,8 +22,8 @@ body {
     font-size: 20px;
 }
 
-.color-blue {
-    color: blue;
+.color-orange {
+    color: orange;
 }
 
 #projects {
@@ -36,16 +37,22 @@ body {
 }
 
 .project {
+    color: black;
     border: 1px solid black;
     border-radius: 10px;
     width: 440px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 5px 0;
+    text-align: justify;
+}
+
+.project p {
+    padding: 0 10px;
 }
 
 .project .titre {
     width: max-content;
     margin: 5px auto;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
