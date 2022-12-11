@@ -57,7 +57,9 @@ body {
     font-weight: bold;
 }
 
-.tools-used img {
-    width: 40px;
-    margin: 0 10px;
+.tools-used {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1rem;
 }
