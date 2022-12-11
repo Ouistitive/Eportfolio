@@ -4,15 +4,17 @@
 		<title> EPortfolio </title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="styles/homepage.css" />
+		<link rel="stylesheet" href="styles/animations.css" />
+		<script src="script/app.js"></script>
 	</head>
 
-	<body>
+	<body onload="init()">
 		<nav>
 			<h1> Steven </h1>
 			<ul>
-				<li> Qui suis-je ? </li>
-				<li> Mes projets </li>
-				<li> Mes outils </li>
+				<li> <a href="#main-content"> Qui suis-je ? </a> </li>
+				<li> <a href="#projects"> Mes projets </a> </li>
+				<li> <a href="#tools"> Mes outils </a> </li>
 			</ul>
 		</nav>
 		
@@ -76,8 +78,8 @@
 				</div>
 			</div>
 			
-			<div id="hobbies" class="container">
-				<h1 class="titre"> Loisirs </h1>
+			<div id="tools" class="container">
+				
 			</div>
 		</div>
 	</body>
