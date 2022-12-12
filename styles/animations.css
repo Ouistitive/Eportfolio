@@ -28,15 +28,21 @@ a:hover::after, a:focus::after {
 
 @keyframes wipe-enter {
 	0% {
-		transform: scale(0, .025);
+		transform: scale(0, .05);
 	}
 	50% {
 		transform: scale(1, .05);
 	}
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 .project {
-    transform: scale(0.5);
+    transform: scale(0.7);
     opacity: 0;
 }
 

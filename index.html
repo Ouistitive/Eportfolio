@@ -4,9 +4,11 @@
 		<title> EPortfolio </title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="styles/homepage.css" />
+		<link rel="stylesheet" href="styles/homepage_tabletVers.css">
+		<link rel="stylesheet" href="styles/homepage_phoneVers.css">
 		<link rel="stylesheet" href="styles/animations.css" />
+
 		<script src="script/app.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 
 	<body onload="init()">		
@@ -17,22 +19,24 @@
 					<li> <a onclick="changeNavColor(0); window.scrollTo(0, 0);"> Qui suis-je ? </a> </li>
 					<li> <a href="#projects" onclick="changeNavColor(1);"> Mes projets </a> </li>
 					<li> <a href="#tools" onclick="changeNavColor(2);"> Mes outils </a> </li>
-					<li> <a href="#contact-me" onclick="changeNavColor(3);"> Me contacter </a> </li>
+					<li> <a href="#contact-me" onclick="changeNavColor(3);"> Contact </a> </li>
 				</ul>
 			</nav>
 
 			<div id="profile" class="container">
 				<h1 class="titre"> Qui suis-je ? </h1>
 				<p class="text-content">
-					<span class="color-orange"> Bonjour ! </span> <br />
-					Je m'appelle <span class="color-orange"> Steven Tea</span>,	et <br />
-					je suis <span class="color-orange"> étudiant en deuxième année </span> à l'IUT de Paris.
-					<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+					<span class="color-bleu"> Bonjour ! </span> <br />
+					Je m'appelle <span class="color-bleu"> Steven Tea</span>,	et <br />
+					je suis <span class="color-bleu"> étudiant en deuxième année </span> à l'IUT de Paris.
 				</p>
 			</div>
 
 			<div id="projects" class="container">
 				<h1 class="titre"> Mes projets </h1>
+				<p class="text-content">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum totam veritatis tempore nostrum mollitia ducimus ex. Voluptas nobis adipisci tenetur pariatur rerum omnis architecto beatae sapiente esse, enim doloribus.
+				</p>
 
 				<div class="project project-transition">
 					<p class="titre"> a </p>
@@ -91,7 +95,7 @@
 			</div>
 
 			<div id="contact-me" class="container">
-				<h1 class="titre"> Me contacter </h1>
+				<h1 class="titre"> Contact </h1>
 				<p class="text-content">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut placeat veritatis optio dignissimos accusamus? Sequi, dolores doloremque aut architecto molestiae facere ea similique iure, asperiores alias neque repellendus pariatur impedit?
 				</p>

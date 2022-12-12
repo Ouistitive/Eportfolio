@@ -1,7 +1,9 @@
 var navElement = null;
-var i = 0;
+var observerProjects;
 
 function init() {
+    window.scrollTo(0, 0);
+
     var nav = document.getElementById("nav-elements");
     navElement = nav.getElementsByTagName("a");
     navElement[0].style.color = "rgb(29, 210, 210)";
@@ -11,27 +13,24 @@ function init() {
 
 
 
-    // Remove the transition class
-    const square = document.getElementsByClassName('project');
+    const refProjects = document.getElementsByClassName('project');
 
-    for(var i = 0; i < square.length; i++)
-        square[i].classList.remove("project-transition");
+    for(var i = 0; i < refProjects.length; i++)
+        refProjects[i].classList.remove("project-transition");
 
-    // Create the observer, same as before:
-    const observer = new IntersectionObserver(entries => {
+    observerProjects = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
         if (entry.isIntersecting) {
-            for(var i = 0; i < square.length; i++)
-                square[i].classList.add("project-transition");
+            entry.target.classList.add("project-transition");
             return;
         }
 
-        for(var i = 0; i < square.length; i++)
-            square[i].classList.remove("project-transition");
+        entry.target.classList.remove("project-transition");
         });
     });
 
-    observer.observe(document.querySelector('#projects'));
+    for(var i = 0; i < refProjects.length; i++)
+        observerProjects.observe(document.getElementsByClassName('project')[i]);
 }
 
 function changeNavColor(idx) {

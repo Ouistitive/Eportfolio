@@ -1,0 +1,16 @@
+@media only screen and (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    .project {
+        margin-top: 20px;
+        width: 90%;
+        height: max-content;
+    }
+
+    .container {
+        padding: 30px 7% 20px;
+        /*border: 1px white solid;*/
+    }
+}
