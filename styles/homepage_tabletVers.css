@@ -1,15 +1,32 @@
-@media only screen and (max-width: 1270px) {
+@media only screen and (min-width: 801px) and (max-width: 1270px) {
     nav {
         font-size: 20px;
     }
 
     nav ul {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        font-weight: bold;
         margin-right: 5px;
         padding-bottom: 10px;
+    }
+
+    #profile .text-content, #projects .text-content, #tools .text-content, #contact-me .text-content {
+        margin-left: 30px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    .titre {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 10px 7% 20px;
+        /*border: 1px white solid;*/
+    }
+
+    .project {
+        margin-top: 20px;
+        width: 90%;
+        height: max-content;
     }
 }

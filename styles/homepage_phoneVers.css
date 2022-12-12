@@ -13,4 +13,23 @@
         padding: 30px 7% 20px;
         /*border: 1px white solid;*/
     }
+
+    nav {
+        font-size: 20px;
+    }
+
+    #profile .text-content, #projects .text-content, #tools .text-content, #contact-me .text-content {
+        margin-left: 30px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    .titre {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 10px 7% 20px;
+        /*border: 1px white solid;*/
+    }
 }
