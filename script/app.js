@@ -11,21 +11,27 @@ function init() {
 
 
 
-    $('#tools').viewportChecker({
-        // Class to add to the elements when they are visible
-        classToAdd: 'visible',
-        
-        // The offset of the elements (let them appear earlier or later)
-        offset: 100,
-        
-        // Add the possibility to remove the class if the elements are not visible
-        repeat: false,
-        
-        // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
-        callbackFunction: function(elem, action) {
-            alert("test");
+    // Remove the transition class
+    const square = document.getElementsByClassName('project');
+
+    for(var i = 0; i < square.length; i++)
+        square[i].classList.remove("project-transition");
+
+    // Create the observer, same as before:
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            for(var i = 0; i < square.length; i++)
+                square[i].classList.add("project-transition");
+            return;
         }
+
+        for(var i = 0; i < square.length; i++)
+            square[i].classList.remove("project-transition");
         });
+    });
+
+    observer.observe(document.querySelector('#projects'));
 }
 
 function changeNavColor(idx) {
@@ -34,3 +40,4 @@ function changeNavColor(idx) {
     for(var i = 1; i < navElement.length; i++)
         navElement[(idx + i) % navElement.length].style.color = "white";
 }
+

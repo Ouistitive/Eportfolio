@@ -24,3 +24,29 @@ a::after {
 a:hover::after, a:focus::after {
     transform: scale(1);
 }
+
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .05);
+	}
+}
+
+.project {
+    transform: scale(0.5);
+    opacity: 0;
+}
+
+.project-transition {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .project {
+        transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+}
