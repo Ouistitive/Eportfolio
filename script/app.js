@@ -2,7 +2,7 @@ var navElement = null;
 var observerProjects;
 
 function init() {
-    window.scrollTo(0, 0);
+    //window.scrollTo(0, 0);
 
     var nav = document.getElementById("nav-elements");
     navElement = nav.getElementsByTagName("a");
