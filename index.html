@@ -6,19 +6,20 @@
 		<link rel="stylesheet" href="styles/homepage.css" />
 		<link rel="stylesheet" href="styles/animations.css" />
 		<script src="script/app.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 
-	<body onload="init()">
-		<nav>
-			<h1> Steven </h1>
-			<ul>
-				<li> <a href="#main-content"> Qui suis-je ? </a> </li>
-				<li> <a href="#projects"> Mes projets </a> </li>
-				<li> <a href="#tools"> Mes outils </a> </li>
-			</ul>
-		</nav>
-		
+	<body onload="init()">		
 		<div id="main-content">
+			<nav>
+				<h1> Steven </h1>
+				<ul id="nav-elements">
+					<li> <a onclick="changeNavColor(0); window.scrollTo(0, 0);"> Qui suis-je ? </a> </li>
+					<li> <a href="#projects" onclick="changeNavColor(1);"> Mes projets </a> </li>
+					<li> <a href="#tools" onclick="changeNavColor(2);"> Mes outils </a> </li>
+				</ul>
+			</nav>
+			
 			<div id="profile" class="container">
 				<h1 class="titre"> Qui suis-je ? </h1>
 				<p class="text-content">
@@ -79,7 +80,10 @@
 			</div>
 			
 			<div id="tools" class="container">
-				
+				<h1 class="titre"> Outils </h1>
+				<p class="text-content">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt neque nulla repellat. Soluta dicta itaque odit ad, ullam ut accusamus commodi. Voluptatibus quas sunt ipsum optio quia est, sequi saepe.
+				</p>
 			</div>
 		</div>
 	</body>

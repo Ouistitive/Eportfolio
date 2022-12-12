@@ -21,6 +21,6 @@ a::after {
     transform-origin: center;
 }
   
-a:hover::after, a:focus::after{
+a:hover::after, a:focus::after {
     transform: scale(1);
 }
