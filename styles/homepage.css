@@ -58,7 +58,12 @@ a {
     font-size: 25px;
 }
 
-.title {
+.text-content {
+    color: rgb(200, 200, 200);
+}
+
+h1.title {
+    color:rgb(157, 255, 255);
     font-size: 55px;
 }
 
