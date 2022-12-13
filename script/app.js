@@ -7,12 +7,7 @@ function init() {
 
     var nav = document.getElementById("nav-elements");
     navElement = nav.getElementsByTagName("a");
-    navElement[0].style.color = "rgb(29, 210, 210)";
-
-    for(var i = 1; i < navElement.length; i++)
-        navElement[i].style.color = "white";
-
-
+    changeNavColor(0);
 
     var refProjects = document.getElementsByClassName('project');
     var refTools = document.getElementsByClassName('img-languages');
