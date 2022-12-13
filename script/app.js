@@ -1,5 +1,6 @@
 var navElement = null;
 var observerProjects;
+var observerTools;
 
 function init() {
     //window.scrollTo(0, 0);
@@ -13,7 +14,8 @@ function init() {
 
 
 
-    const refProjects = document.getElementsByClassName('project');
+    var refProjects = document.getElementsByClassName('project');
+    var refTools = document.getElementsByClassName('img-languages');
 
     for(var i = 0; i < refProjects.length; i++)
         refProjects[i].classList.remove("project-transition");
@@ -31,6 +33,21 @@ function init() {
 
     for(var i = 0; i < refProjects.length; i++)
         observerProjects.observe(document.getElementsByClassName('project')[i]);
+
+    observerTools = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                for(var i = 0; i < refTools.length; i++)
+                    refTools[i].classList.add("project-transition");
+                return;
+            }
+
+            for(var i = 0; i < refTools.length; i++)
+                refTools[i].classList.remove("project-transition");
+        })
+    });
+
+    observerTools.observe(document.getElementsByClassName('img-languages')[0]);
 }
 
 function changeNavColor(idx) {

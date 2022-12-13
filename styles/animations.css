@@ -1,3 +1,5 @@
+/* ---------------- UNDERLINE ANIMATION ON NAVBAR ---------------- */
+
 a:hover::after, a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
@@ -25,6 +27,8 @@ a:hover::after, a:focus::after {
     transform: scale(1);
 }
 
+/* ----------------  ---------------- */
+
 
 @keyframes wipe-enter {
 	0% {
@@ -46,6 +50,11 @@ a:hover::after, a:focus::after {
     opacity: 0;
 }
 
+.img-languages {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
 .project-transition {
     opacity: 1;
     transform: none;
@@ -55,7 +64,13 @@ a:hover::after, a:focus::after {
     .project {
         transition: opacity 1.5s ease, transform 1.5s ease;
     }
+
+    .img-languages {
+        transition: opacity .7s ease, transform 1.5s ease;
+    }
 }
+
+/* ---------------- SLIDE ANIMATION ON TITLE ---------------- */
 
 @keyframes deroulement {
     from {
@@ -77,3 +92,5 @@ h1.title, .text-content {
 h1.title, .text-content {
     display: block;
 }
+
+/* ----------------  ---------------- */
