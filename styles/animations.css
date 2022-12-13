@@ -56,3 +56,24 @@ a:hover::after, a:focus::after {
         transition: opacity 1.5s ease, transform 1.5s ease;
     }
 }
+
+@keyframes deroulement {
+    from {
+        margin-left: -5%;
+        opacity: .2;
+    }
+    to {
+        padding-left: auto;
+        opacity: 1;
+    }
+}
+
+h1.title, .text-content {
+    animation-name: deroulement;
+    animation-duration: 1.5s;
+    display: none;
+}
+
+h1.title, .text-content {
+    display: block;
+}

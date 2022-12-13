@@ -58,7 +58,7 @@ a {
     font-size: 25px;
 }
 
-.titre {
+.title {
     font-size: 55px;
 }
 
@@ -81,7 +81,7 @@ a {
     justify-content: space-around;
 }
 
-#projects .titre {
+#projects .title {
     flex: 0 0 100%;
 }
 
@@ -100,7 +100,7 @@ a {
     padding: 0 10px;
 }
 
-.project .titre {
+.project .title {
     width: max-content;
     margin: 5px auto;
     font-size: 30px;
