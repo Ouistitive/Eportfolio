@@ -7,14 +7,13 @@
 		<link rel="stylesheet" href="styles/homepage_tabletVers.css">
 		<link rel="stylesheet" href="styles/homepage_phoneVers.css">
 		<link rel="stylesheet" href="styles/animations.css" />
-
 		<script src="script/app.js"></script>
 	</head>
 
 	<body onload="init()">		
 		<div id="main-content">
 			<nav>
-				<h1> Steven </h1>
+				<h1> <span class="color-bleu"> Steven </span> </h1>
 				<ul id="nav-elements">
 					<li> <a onclick="changeNavColor(0); window.scrollTo(0, 0);"> Qui suis-je ? </a> </li>
 					<li> <a href="#projects" onclick="changeNavColor(1);"> Mes projets </a> </li>
@@ -30,19 +29,26 @@
 					Je m'appelle <span class="color-bleu"> Steven Tea</span>,	et <br />
 					je suis <span class="color-bleu"> étudiant en deuxième année </span> à l'IUT de Paris.
 				</p>
+				<p class="under-part">
+					Passionné d'informatique depuis le collège, j'essaye toujours de trouver <br />
+					un moyen d'améliorer mes compétences en développement logiciel et fasciné  <br />
+					par comment les logiciels fonctionnent et sont optimisés !
+				</p>
 			</div>
 
 			<div id="projects" class="container">
 				<h1 class="title"> Mes projets </h1>
 				<p class="text-content">
-					Voici certains projets que j'ai pu faire lors de mes dernières années en informatique, ces projets m'ont fait acquérir
-					et approfondir d'importantes compétences techniques.
+					Voici <span class="color-bleu">certains projets que j'ai pu réaliser</span> lors de mes dernières années en informatique, ces projets m'ont fait acquérir
+					et approfondir d'importantes <span class="color-bleu">compétences techniques et générales.</span>
 				</p>
 
 				<div class="project project-transition">
 					<p class="title"> Asteroids </p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique repellat repellendus debitis autem quas beatae in porro voluptates tempore nam, quis provident velit dolorum esse accusamus laboriosam, distinctio tempora magni.
+						Reprise du jeu Asteroids sortie en 1979, réalisé à en dehors de mes projets universitaires avec
+						le langage C++. Ce projet m'a permis d'apprendre à utiliser la bibliothèque graphique SFML et la 
+						programmation orientée objet dans ce langage.
 					</p>
 					<hr>
 					<span class="tools-used"> C++ </span>
@@ -52,7 +58,9 @@
 				<div class="project project-transition">
 					<p class="title"> Arbre généalogique </p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, tenetur optio excepturi harum ducimus omnis ex vel perspiciatis iusto sed ad, deserunt sunt veniam suscipit deleniti velit quasi, iure quis.
+						Création d'une application permettant de gérer son arborescence familiale, réalisé en tant que
+						projet de lycée. J'ai pu apprendre à gérer et lier une base de données avec le SGBD SQLite avec
+						les langages Python et SQL.
 					</p>
 					<hr />
 					<span class="tools-used"> Python </span>
@@ -62,7 +70,9 @@
 				<div class="project project-transition">
 					<p class="title"> Refonte d'un site web </p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nisi labore et omnis odio perspiciatis totam laborum quaerat, hic consequatur cum, ut natus dolores repellat mollitia quasi voluptates provident at?
+						Réalisé avec trois autres de mes camarades pour un projet universitaire. L'objectif était de
+						reprendre un site internet (CASBT), et d'améliorer l'expérience utlisateur tout en gardant
+						la charte graphique du site de base.
 					</p>
 					<hr />
 					<span class="tools-used"> HTML/CSS </span>
@@ -72,7 +82,9 @@
 				<div class="project project-transition">
 					<p class="title"> Implémentation de graphes </p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias neque fugiat eaque omnis itaque, consequatur autem, perspiciatis, consectetur placeat blanditiis excepturi possimus non vitae odit explicabo minus libero tempore!
+						Création de classes et d'interfaces de graphes afin de pouvoir y appliquer les algorithmes de
+						Dijkstra et Bellman. Ce projet m'a permis de mieux appréhender le fonctionnement des interfaces
+						en Java et de réaliser des tests unitaires.
 					</p>
 					<hr />
 					<span class="tools-used"> Java </span>
@@ -81,7 +93,9 @@
 				<div class="project project-transition">
 					<p class="title"> Démineur </p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ab obcaecati, numquam reiciendis ipsa id inventore enim quisquam itaque, quasi reprehenderit labore, fugit fugiat sequi dolores. Consequatur facere amet unde.
+						Développement du jeu Démineur avec un camarade pour un projet universitaire. Avec le langage
+						Visual Basic.NET, nous avons appris à gérer la programmation évènementielle avec une interface
+						graphique.
 					</p>
 					<hr />
 					<span class="tools-used"> Visual Basic.NET </span>
@@ -92,7 +106,8 @@
 				<h1 class="title"> Langages et logiciels </h1>
 				<p class="text-content">
 					<!-- En tant qu'informaticien, nous utilisons différents logiciels et langage de programmation. -->
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, ducimus in laudantium ut distinctio error. Alias voluptatum sit odit, aliquid deleniti cupiditate quia enim tempore! Sequi neque expedita sit atque.
+					En tant qu'<span class="color-bleu">informaticien,</span> nous nous devons de connaître <span class="color-bleu">différents logiciels
+					et langage de programmation</span> afin de pouvoir nous adapter en fonction des <span class="color-bleu">besoins clients.</span>
 					<div class="img-languages">
 						<div class="content-img">
 							<img src="img/C.png" class="img">
@@ -200,7 +215,8 @@
 			<div id="contact-me" class="container">
 				<h1 class="title"> Contact </h1>
 				<p class="text-content">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut placeat veritatis optio dignissimos accusamus? Sequi, dolores doloremque aut architecto molestiae facere ea similique iure, asperiores alias neque repellendus pariatur impedit?
+					Pour <span class="color-bleu">me contacter</span>, vous pouvez me retrouver avec les informations 
+					<span class="color-bleu">ci-dessous.</span>
 				</p>
 			</div>
 		</div>

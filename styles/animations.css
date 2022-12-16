@@ -83,13 +83,13 @@ a:hover::after, a:focus::after {
     }
 }
 
-h1.title, .text-content {
+h1.title, .text-content, .under-part {
     animation-name: deroulement;
     animation-duration: 1.5s;
     display: none;
 }
 
-h1.title, .text-content {
+h1.title, .text-content, .under-part {
     display: block;
 }
 
