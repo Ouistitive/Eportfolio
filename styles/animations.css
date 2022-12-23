@@ -83,6 +83,15 @@ a:hover::after, a:focus::after {
     }
 }
 
+@keyframes deroulementVertical {
+    from {
+        margin-bottom: 100%;
+    }
+    to {
+        margin-bottom: auto;
+    }
+}
+
 h1.title, .text-content, .under-part {
     animation-name: deroulement;
     animation-duration: 1.5s;
