@@ -51,6 +51,31 @@ a {
     margin: auto;*/
 }
 
+#profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CV {
+    height: 70px;
+    width: 170px;
+    
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: rgb(157, 255, 255);
+    font-size: large;
+}
+
+#CV:hover {
+    background-color: rgba(29, 210, 210, 0.7);
+    border: 2px solid black;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
 #profile .text-content, #projects .text-content, #tools .text-content, #contact-me .text-content {
     margin-left: 50px;
     margin-right: 50px;
