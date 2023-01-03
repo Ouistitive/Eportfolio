@@ -3,6 +3,11 @@
         display: none;
     }
 
+    
+    #profile {
+        display: block;
+    }
+
     .project {
         margin-top: 20px;
         width: 90%;
