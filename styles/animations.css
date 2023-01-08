@@ -92,6 +92,25 @@ a:hover::after, a:focus::after {
     }
 }
 
+@keyframes deroulementDroit {
+    from {
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#CV {
+    animation-name: deroulementDroit;
+    animation-duration: 2.5s;
+    display: none;
+}
+
+#CV {
+    display: block;
+}
+
 h1.title, .text-content, .under-part {
     animation-name: deroulement;
     animation-duration: 1.5s;
