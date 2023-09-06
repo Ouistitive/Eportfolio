@@ -11,7 +11,7 @@ function init() {
 
     var refProjects = document.getElementsByClassName('project');
     var refTools = document.getElementsByClassName('img-languages');
-    var refContact = document.getElementsByClassName('img-contact');
+    //var refContact = document.getElementsByClassName('img-contact');
 
     for(var i = 0; i < refProjects.length; i++)
         refProjects[i].classList.remove("project-transition");

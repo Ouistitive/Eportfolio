@@ -24,7 +24,7 @@ nav {
 }
 
 nav ul {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -76,7 +76,7 @@ a {
     transition: all 0.2s ease-out;
 }
 
-#profile .text-content, #projects .text-content, #tools .text-content, #contact-me .text-content {
+.container .text-content {
     margin-left: 50px;
     margin-right: 50px;
     line-height: 30px;
@@ -189,4 +189,29 @@ img {
     opacity: 0;
     transition: .3s;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.experience {
+    margin: 0 100px;
+    padding: 0 50px 10px 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.experience .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-header a {
+    color: rgb(29, 120, 120);
+    text-decoration: underline;
 }

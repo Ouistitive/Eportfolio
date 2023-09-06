@@ -15,10 +15,11 @@
 			<nav>
 				<h1> <span class="color-bleu"> Steven </span> </h1>
 				<ul id="nav-elements">
-					<li> <a onclick="changeNavColor(0); window.scrollTo(0, 0);"> Qui suis-je ? </a> </li>
-					<li> <a href="#projects" onclick="changeNavColor(1);"> Mes projets </a> </li>
-					<li> <a href="#tools" onclick="changeNavColor(2);"> Mes outils </a> </li>
-					<li> <a href="#contact-me" onclick="changeNavColor(3);"> Contact </a> </li>
+					<li> <a href="#who-am-i" onclick="changeNavColor(0); window.scrollTo(0, 0);"> Qui suis-je ? </a> </li>
+					<li> <a href="#experiences" onclick="changeNavColor(1);"> Mes expériences </a> </li>
+					<li> <a href="#projects" onclick="changeNavColor(2);"> Mes projets </a> </li>
+					<li> <a href="#tools" onclick="changeNavColor(3);"> Mes outils </a> </li>
+					<li> <a href="#contact-me" onclick="changeNavColor(4);"> Contact </a> </li>
 				</ul>
 			</nav>
 
@@ -28,7 +29,7 @@
 					<p class="text-content">
 						<span class="color-bleu"> Bonjour ! </span> <br />
 						Je m'appelle <span class="color-bleu"> Steven Tea</span>,	et <br />
-						je suis <span class="color-bleu"> étudiant en deuxième année </span> à l'IUT de Paris - Rives de Seine.
+						je suis <span class="color-bleu"> étudiant en troisième année </span> à l'IUT de Paris - Rives de Seine.
 					</p>
 					<p class="under-part">
 						Passionné d'informatique depuis le collège, j'essaye toujours de trouver <br />
@@ -37,6 +38,34 @@
 					</p>
 				</div>
 				<a href="documents/CV_Steven_TEA.pdf"> <button id="CV"> Mon CV </button> </a>
+			</div>
+
+			<div id="experiences" class="container">
+				<h1 class="title"> Mes expériences </h1>
+				<p class="text-content">
+					J'ai vu effectué des <span class="color-bleu">expériences enrichissantes</span> en entreprise
+					qui m'ont permis de découvrir de <span class="color-bleu">nouvelles technologies</span> et de <span class="color-bleu">nouveaux outils de travail.</span>
+				</p>
+
+				<div class="experience">
+					<div class="experience-header">
+						<p class="title"> SIMPLOS (stage de 8 semaines) </p>
+						<a class="color-bleu" href="documents/experiences/Rapport de stage Steven TEA 204.pdf"> Mon rapport de stage </a>
+					</div>
+					<p>
+						J'ai travaillé sur le développement d'une extension WordPress appelé SIMPLOS permettant l'intégration d'une
+						fonctionnalité de récupération de données personnelles depuis la plateforme. Pour cela, j'ai procédé au développement
+						d'un site d'e-commerce fictif destiné à servir d'environnement de test pour l'extension que j'ai développée. <br/>
+						J'ai également implémenté une fonctionnalité de "push" de notifications dans l'application mobile développée en Flutter.
+						J'ai pu découvrir le langage de programmation Dart avec le framework Flutter et analyser différents moyens d'implémenter des
+						requêtes HTTP inversées.
+					</p>
+					<hr/>
+					<span class="tools-used"> Développement web back-end et mobile </span>
+					<span class="tools-used"> Extension WordPress </span>
+					<span class="tools-used"> Symfony / PHP </span>
+					<span class="tools-used"> Dart / Flutter </span>
+				</div>
 			</div>
 
 			<div id="projects" class="container">
@@ -125,49 +154,49 @@
 					et langage de programmation</span> afin de pouvoir nous adapter en fonction des <span class="color-bleu">besoins clients.</span>
 					<div class="img-languages">
 						<div class="content-img">
-							<img src="img/C.png" class="img">
+							<img src="img/tools/C.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> C </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/C++.png" class="img">
+							<img src="img/tools/C++.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> C++ </div>
 							</div>
 						</div>
 						
 						<div class="content-img">
-							<img src="img/Python.png" class="img">
+							<img src="img/tools/Python.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Python </div>
 							</div>
 						</div>
 						
 						<div class="content-img">
-							<img src="img/Java.png" class="img">
+							<img src="img/tools/Java.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Java </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/HTML.svg" class="img">
+							<img src="img/tools/HTML.svg" class="img">
 							<div class="overlay">
 							 	<div class="text"> HTML </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/CSS.svg" class="img">
+							<img src="img/tools/CSS.svg" class="img">
 							<div class="overlay">
 							 	<div class="text"> CSS </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/Javascript.svg" class="img">
+							<img src="img/tools/Javascript.svg" class="img">
 							<div class="overlay">
 							 	<div class="text"> Javascript </div>
 							</div>
@@ -176,49 +205,49 @@
 					
 					<div class="img-languages">
 						<div class="content-img">
-							<img src="img/VSC.png" class="img">
+							<img src="img/tools/VSC.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Visual Studio Code </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/VS.png" class="img">
+							<img src="img/tools/VS.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Visual Studio </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/Eclipse.png" class="img">
+							<img src="img/tools/Eclipse.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Eclipse </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/Oracle.png" class="img">
+							<img src="img/tools/Oracle.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Oracle SQL </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/Ubuntu.png" class="img">
+							<img src="img/tools/Ubuntu.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Ubuntu </div>
 							</div>
 						</div>
 						
 						<div class="content-img">
-							<img src="img/Git.png" class="img">
+							<img src="img/tools/Git.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Git </div>
 							</div>
 						</div>
 
 						<div class="content-img">
-							<img src="img/Github.png" class="img">
+							<img src="img/tools/Github.png" class="img">
 							<div class="overlay">
 							 	<div class="text"> Github </div>
 							</div>
@@ -234,9 +263,9 @@
 					<span class="color-bleu">ci-dessous.</span>
 
 					<div id="contact">
-						<a href="https://www.linkedin.com/in/steven-tea-8696a7251/" target="_blank" rel="noopener noreferrer"> <img src="img/Linkedin.png" class="img img-contact"> </a>
-						<a href="https://github.com/Ouistitive/" target="_blank" rel="noopener noreferrer"> <img src="img/Github2.svg" class="img img-contact"> </a>
-						<a href="mailto: steven.tea.pro@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="img/Email.png" class="img img-contact"> </a>
+						<a href="https://www.linkedin.com/in/steven-tea-8696a7251/" target="_blank" rel="noopener noreferrer"> <img src="img/contact/Linkedin.png" class="img img-contact"> </a>
+						<a href="https://github.com/Ouistitive/" target="_blank" rel="noopener noreferrer"> <img src="img/contact/Github2.svg" class="img img-contact"> </a>
+						<a href="mailto: steven.tea.pro@gmail.com" target="_blank" rel="noopener noreferrer"> <img src="img/contact/Email.png" class="img img-contact"> </a>
 					</div>
 				</p>
 			</div>
